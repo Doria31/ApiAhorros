@@ -1,0 +1,45 @@
+Listar cuentas:
+Método: GET
+URL: http://localhost:3000/api/cuentas
+
+Crear una cuenta:
+Método: POST
+URL: http://localhost:3000/api/cuentas
+Body (JSON):
+JSON
+{
+  "documentoCliente": "123456789",
+  "claveAcceso": "1234"
+}
+
+
+Consignar dinero:
+Método: POST
+URL: http://localhost:3000/api/cuentas/consignar
+Body (JSON):
+JSON
+{
+  "numeroCuenta": 1,
+  "monto": 1000
+}
+
+Retirar dinero:
+Método: POST
+URL: http://localhost:3000/api/cuentas/retirar
+Body (JSON):
+JSON
+{
+  "numeroCuenta": 1,
+  "monto": 500
+}
+
+
+Eliminar una cuenta:
+Método: DELETE
+URL: http://localhost:3000/api/cuentas
+Body (JSON):
+JSON
+
+{
+  "numeroCuenta": 1
+}
